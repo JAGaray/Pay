@@ -25,7 +25,7 @@ int main()
 	int hour = now->tm_hour; //retrieve current hour
 	int min = now->tm_min; //retrieve current minute
 
-	cout << "Enter the hours of today's sunset time (4-9): ";
+	cout << "Enter the hours of today's sunset time (12-24): ";
 	cin >>  hours_Sunset;
 	cout << "Enter the minutes of today's sunset time (0-59): ";
 	cin >> mins_Sunset;
@@ -40,7 +40,7 @@ int main()
 	{
 	cout << "Good afternoon, Priyanka" << endl;
 	}		
-	else if (hour > hours_Sunset && hour < 24)
+	else if (hour > hours_Sunset)
 	{
 	cout << "Good evening, Priyanka" << endl;
 	}

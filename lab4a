@@ -1,0 +1,53 @@
+/* Author: Julian Garay
+   Instructor: Priyanka
+   Class: CSCI 136
+   Lab: 4 (Task 1)
+
+This program is designed to calculate how far n choose k can be correct using int as the variable. */
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+        int i, j, k, l, m, n, factn = 1, factk = 1, factnk = 1;
+
+        cout << "Please enter a positive integer for n: ";
+        cin >> n;
+
+
+        for (i = 1; i <= n; ++i)
+        {
+                factn *= i;
+        }
+
+        cout << "Factorial of " << n << " = " << factn << endl;
+
+
+        cout << "Please enter a positive integer for k: ";
+        cin >> k;
+
+        for (l = 1; l <= k; ++l)
+        {
+                factk *= l;
+        }
+
+        cout << "Factorial of " << k << " = " << factk << endl;
+
+        cout << "Now to calculate (n-k)!";
+
+        m = (n-k);
+
+        for (j = 1; j <=m; ++j)
+        {
+                factnk *= j;
+        }
+
+        cout << "Factorial of " << m << " = " << factnk << endl;
+
+        return 0;
+}
+~                                                                                                        
+~                         
